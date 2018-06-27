@@ -833,7 +833,7 @@ function Msg( $Message, $EOL = PHP_EOL, $printf = [] )
 		$Message .= "\033[0m";
 	}
 
-	$Message = '[' . date( 'H:i:s' ) . '] ' . $Message . $EOL;
+	$Message = '[' . date( UTC+08 ) . '] ' . $Message . $EOL;
 
 	if( !empty( $printf ) )
 	{
